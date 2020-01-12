@@ -1,0 +1,28 @@
+plugins {
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '4.0.4'
+}
+
+mainClassName = 'PugBotGradle3.BotPug'
+
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+	maven { url 'https://jitpack.io' }
+    jcenter()
+   
+}
+
+dependencies {
+   compile 'net.dv8tion:JDA:4.1.0_90'
+   compile 'com.jagrosh:jda-utilities:3.0.2'
+   // https://mvnrepository.com/artifact/commons-io/commons-io
+   compile group: 'commons-io', name: 'commons-io', version: '2.6'
+   implementation 'com.github.marcoacierno:pastebin-java-api:0.2.1'
+   
+}
+
+compileJava.options.encoding = 'UTF-8'
